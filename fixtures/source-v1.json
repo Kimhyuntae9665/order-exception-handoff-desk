@@ -1,0 +1,30 @@
+{
+  "schema_version": "P14-SYNTHETIC-SOURCE-1",
+  "source_revision": 4,
+  "source_cutoff": "2026-10-03T10:00:00+09:00",
+  "source_timezone": "Asia/Seoul",
+  "fictional": true,
+  "quantity_unit": "EA",
+  "completeness": {"scope": "listed schedule lines only", "no_omitted_cancellation_or_delivery_reversal_records": true},
+  "lines": [
+    {"record_id":"SRC-A-L1","revision":1,"key":{"source_system":"ERP-SYNTH-1","order":"SO-A","item":"10","schedule_line":"1"},"ordered_ea":10,"confirmed_ea":10,"delivered_ea":6,"requested_destination_arrival_date":"2026-10-05","confirmed_destination_arrival_date":"2026-10-05","planned_dispatch_date":null,"actual_delivery_date":null,"snapshot_blocks":[]},
+    {"record_id":"SRC-A-L2","revision":1,"key":{"source_system":"ERP-SYNTH-1","order":"SO-A","item":"10","schedule_line":"2"},"ordered_ea":8,"confirmed_ea":null,"delivered_ea":0,"requested_destination_arrival_date":"2026-10-06","confirmed_destination_arrival_date":null,"planned_dispatch_date":null,"actual_delivery_date":null,"snapshot_blocks":[{"block_instance_id":"DB-A2","status":"DELIVERY_BLOCK","owner_role":"Warehouse Review","opened_at":null}]},
+    {"record_id":"SRC-B-L1","revision":1,"key":{"source_system":"ERP-SYNTH-1","order":"SO-B","item":"10","schedule_line":"1"},"ordered_ea":5,"confirmed_ea":null,"delivered_ea":0,"requested_destination_arrival_date":"2026-10-04","confirmed_destination_arrival_date":null,"planned_dispatch_date":null,"actual_delivery_date":null,"snapshot_blocks":[],"permitted_status":"CREDIT_REVIEW_BLOCK","owner_role":"Authorized Commercial Review"},
+    {"record_id":"SRC-C-L1","revision":4,"key":{"source_system":"ERP-SYNTH-1","order":"SO-C","item":"10","schedule_line":"1"},"ordered_ea":null,"confirmed_ea":null,"delivered_ea":null,"requested_destination_arrival_date":null,"confirmed_destination_arrival_date":null,"planned_dispatch_date":null,"actual_delivery_date":null,"snapshot_blocks":[]}
+  ],
+  "notes": [
+    {"record_id":"NOTE-A1","revision":1,"order":"SO-A","recorded_at":"2026-10-02T17:00:00+09:00","kind":"customer_request","text":"Please ship all tomorrow","authority":"request_only","date_basis":"requested shipping, not destination arrival"}
+  ],
+  "events": [
+    {"event_id":"EV-C1","revision":2,"key":{"source_system":"ERP-SYNTH-1","order":"SO-C","item":"10","schedule_line":"1"},"at":"2026-10-03T09:00:00+09:00","kind":"OPEN","block_instance_id":"BLK-C1","status":"ORDER_EXCEPTION","owner_role":null},
+    {"event_id":"EV-C2","revision":3,"key":{"source_system":"ERP-SYNTH-1","order":"SO-C","item":"10","schedule_line":"1"},"at":"2026-10-03T09:10:00+09:00","kind":"CLEAR","block_instance_id":"BLK-C1"},
+    {"event_id":"EV-C3","revision":4,"key":{"source_system":"ERP-SYNTH-1","order":"SO-C","item":"10","schedule_line":"1"},"at":"2026-10-03T09:20:00+09:00","kind":"OPEN","block_instance_id":"BLK-C2","status":"ORDER_EXCEPTION","owner_role":null},
+    {"event_id":"EV-C3","revision":4,"key":{"source_system":"ERP-SYNTH-1","order":"SO-C","item":"10","schedule_line":"1"},"at":"2026-10-03T09:20:00+09:00","kind":"OPEN","block_instance_id":"BLK-C2","status":"ORDER_EXCEPTION","owner_role":null}
+  ],
+  "seeded_reviews": [
+    {"review_id":"SEED-RR-C1","fixture_only":true,"key":{"source_system":"ERP-SYNTH-1","order":"SO-C","item":"10","schedule_line":"1"},"block_instance_id":"BLK-C1","source_revision":2,"reviewed_at":"2026-10-03T09:05:00+09:00","kind":"local_handoff_acknowledgment","text":"Fictional local review of BLK-C1 only; no source clear or release action."}
+  ],
+  "restricted_context": [
+    {"record_id":"PRIVATE-B1","revision":1,"order":"SO-B","title":"Fictional commercial-only context","reason":"Synthetic placeholder only; no creditworthiness assessment.","canary":"SYNTHETIC-B-CANARY-839Q","allowed_role":"Authorized Commercial Review"}
+  ]
+}

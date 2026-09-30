@@ -1,0 +1,22 @@
+{
+  "schema_version": "P14-SYNTHETIC-MANIFEST-1",
+  "fixture_origin": "Original locally authored fictional specification; no vendor/private/customer data",
+  "model_calls_at_pin": 0,
+  "files": [
+    {
+      "path": "fixtures/source-v1.json",
+      "bytes": 3811,
+      "sha256": "34e6676775b44cf25caf446ddbbd1f629b1aabc73efe8f68dce3c5afaa887461"
+    },
+    {
+      "path": "fixtures/review-policy-v1.json",
+      "bytes": 2128,
+      "sha256": "9da3effda87dfae3ac88628fb9632e3fa7c4f4b7167f20d42d5a788c900522c8"
+    },
+    {
+      "path": "fixtures/gold-v1.json",
+      "bytes": 1869,
+      "sha256": "95aecba517a52745bcc29db2cf61c5350ee40c74137d469b9444a8ace4985a90"
+    }
+  ]
+}

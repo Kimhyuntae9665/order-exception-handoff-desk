@@ -1,0 +1,15 @@
+{
+  "policy_version":"P14-HANDOFF-POLICY-1",
+  "roles":["Service","Warehouse Review","Authorized Commercial Review"],
+  "default_role":"Service",
+  "known_orders":["SO-A","SO-B","SO-C"],
+  "so_b_minimal_projection":{"roles":["Service","Warehouse Review"],"exact_fields":["status","owner_role"]},
+  "quantity_rule":"ordered_ea - delivered_ea only when both are known nonnegative integers, delivered <= ordered, and manifest asserts no omitted cancellation/delivery-reversal records for these lines; remaining ordered is not stock/readiness",
+  "date_rule":"No single order-wide confirmed date when any line is unknown or dates differ. Requested arrival, confirmed arrival, planned dispatch, actual delivery are distinct. Requests cannot confirm or release.",
+  "event_rule":"Exact duplicate event ID/content is transport only; differing same-ID content is conflict. OPEN is a new immutable block instance. CLEAR targets a currently active exact instance. CLEAR_REVERSED references one prior CLEAR for the same exact key/instance and reactivates that instance only; unsupported/duplicate reversals conflict. Reviews do not fold as source events.",
+  "review_action":"local_handoff_acknowledgment_only",
+  "required_review_binding":["source_revision","source_sha256","policy_sha256","role","role_revision","key","block_instance_id","view_fingerprint"],
+  "receipt_rule":"Review confirms inspected facts and unanswered questions, never clears/releases/promises. A binding mismatch is stale; no receipt/case is added. Seeded fictional review is historical after its instance clears or the source advances.",
+  "permission_rule":"Apply role projection before source pointers, counts, model input, review evidence and response metadata. A minimal SO-B projection contains exactly status/owner_role; unknown and denied source IDs use one generic response. Downgrade clears old details/caches immediately.",
+  "source_failure_rule":"Any source/policy read or hash failure revokes current client authority; source-sensitive cached data cannot be restored by late responses. No auto-review/execution or production authentication claim."
+}

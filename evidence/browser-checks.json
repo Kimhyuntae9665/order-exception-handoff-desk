@@ -1,0 +1,127 @@
+{
+  "kind": "actual Chrome CPU engineering checks; no inference",
+  "model_calls": 0,
+  "source_sha256": "34e6676775b44cf25caf446ddbbd1f629b1aabc73efe8f68dce3c5afaa887461",
+  "checks": [
+    {
+      "name": "SO-A exact quantities, distinct dates and incomplete confirmation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Keyboard Enter opens named source destination",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Delayed source navigation preserves later explicit focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Exact duplicate transport, current instance and seeded historical receipt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Historical revision cannot authorize current review",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Repeated acknowledgment is idempotent; block remains active",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Exact local receipt export scope; no target import/release claim",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Explicit fictional commercial projection can inspect its own source",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Captured old commercial response cannot restore role-revoked evidence",
+      "passed": true,
+      "details": {
+        "old_payload_had_context": true,
+        "preserved_old_response_sha256": "0537348a5a8939e8a575299f32ff1b4f292f9742ff5b6fed98b1f79b25ea480b"
+      }
+    },
+    {
+      "name": "Rapid role/order choices reconcile desired server role before reads",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px readable native text and scrollable exact-key table",
+      "passed": true,
+      "details": {
+        "min_font_px": 14,
+        "no_page_overflow": true
+      }
+    },
+    {
+      "name": "Missing isolated source revokes current authority and actions",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Missing isolated policy revokes all current evidence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Actual Tab sequence keeps named native controls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No browser JavaScript errors",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "passed": 15,
+  "failed": 0,
+  "media": [
+    {
+      "path": "docs/architecture.png",
+      "sha256": "596873881e3cd99a36ba03949d8a89cc999324fa4b24e69b3593e340501610b9",
+      "bytes": 33769
+    },
+    {
+      "path": "docs/event-handoff-review.png",
+      "sha256": "75abf8f9236540c7d2d04317e13fd2d27932c83894d04f9be8f075e95fbeb650",
+      "bytes": 286192
+    },
+    {
+      "path": "docs/mobile-390.png",
+      "sha256": "beaba1854828a569f286c8d8ea57e7750002e3c2f717793335df4013b7e8af4a",
+      "bytes": 216018
+    },
+    {
+      "path": "docs/permitted-status.png",
+      "sha256": "eb0210b05d9346087cecc9f5a409622bb1b2873c84c990e11c3d76089bc18194",
+      "bytes": 74688
+    },
+    {
+      "path": "docs/schedule-lines.png",
+      "sha256": "fcdb0d044c1215583e6aa9215c40db64f842cdaf0b5afe615087da635c84cf2f",
+      "bytes": 232002
+    },
+    {
+      "path": "docs/source-unavailable.png",
+      "sha256": "363b78c5d3dea56fdb9d9c66cc0e54f19a3562ffd57d16910e458deba8abbea0",
+      "bytes": 65731
+    },
+    {
+      "path": "docs/cpu-native-demo.mp4",
+      "sha256": "27f41313d7539e5e0b370ba89b4ee0ba3487416d38ae9464eba70afe67eb26bf",
+      "bytes": 211775
+    }
+  ]
+}

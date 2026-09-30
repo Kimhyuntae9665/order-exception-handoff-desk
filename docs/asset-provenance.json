@@ -1,0 +1,20 @@
+{
+  "license": "MIT",
+  "assets": "Original geometric generic process glyphs; not technology or vendor logos",
+  "style": "User-approved dark dotted background, rounded white cards, curved arrows, short names below glyphs. No reference image pixels copied.",
+  "reference_transfer": "Earlier style approval retained; no new Library materialization or credential forwarding",
+  "topology": "source JSON -> CPU admission/rules -> parallel role-filtered lines/events -> human local review receipt",
+  "resource_embedding": "Native inline SVG paths; no external resources",
+  "fit": "48x48 square viewBox fitted explicitly to72x72; ratio1 preserved",
+  "narrow_label_px_at_360": 18,
+  "files": [
+    {
+      "path": "docs/architecture.svg",
+      "sha256": "ced79c46cf86f0747a82eb794778ca8c8892f789bb390a021e16be0607e0b7fc"
+    },
+    {
+      "path": "docs/architecture.png",
+      "sha256": "bc34a45ac4e4b2e8feede8c307c08f9b13c2e4c7fb4889323751f2eb2cf2243c"
+    }
+  ]
+}

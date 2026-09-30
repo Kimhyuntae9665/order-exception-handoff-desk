@@ -1,0 +1,39 @@
+{
+  "receipt": {
+    "review_id": "LOCAL-68f8781ee7cdaaf49d9d",
+    "kind": "local_handoff_acknowledgment",
+    "origin": "executed_local_review",
+    "source_revision": 4,
+    "source_sha256": "4e8cd190d25b5bc2c18c77013f6e990daf1bc51e4eb522bd50e6f19d38b9693d",
+    "policy_sha256": "9da3effda87dfae3ac88628fb9632e3fa7c4f4b7167f20d42d5a788c900522c8",
+    "role": "Service",
+    "role_revision": 1,
+    "key": {
+      "source_system": "ERP-SYNTH-1",
+      "order": "SO-C",
+      "item": "10",
+      "schedule_line": "1"
+    },
+    "block_instance_id": "BLK-C2",
+    "view_fingerprint": "271e53e5ca63549eeab69f6156381f02665371d5d612e4d58692c215ed7d43f5",
+    "acknowledgment": true,
+    "acknowledged_questions": [
+      "ordered_ea is unknown for [\"ERP-SYNTH-1\",\"SO-C\",\"10\",\"1\"].",
+      "confirmed_ea is unknown for [\"ERP-SYNTH-1\",\"SO-C\",\"10\",\"1\"].",
+      "delivered_ea is unknown for [\"ERP-SYNTH-1\",\"SO-C\",\"10\",\"1\"].",
+      "remaining_ordered_ea is unknown for [\"ERP-SYNTH-1\",\"SO-C\",\"10\",\"1\"].",
+      "Confirmed destination arrival date is unknown for [\"ERP-SYNTH-1\",\"SO-C\",\"10\",\"1\"].",
+      "Who owns active block BLK-C2? Responsible role is unknown."
+    ],
+    "reviewed_at": "2026-09-30T22:47:41.370Z",
+    "model_calls": 0,
+    "source_blocks_changed": false
+  },
+  "acknowledgment": {
+    "state": "prepared_and_acknowledged",
+    "download_completion": "not_established",
+    "erp_write": false,
+    "customer_message": false,
+    "block_release": false
+  }
+}

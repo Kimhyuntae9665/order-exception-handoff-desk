@@ -1,0 +1,83 @@
+{
+  "schema_version": "P14-CPU-CONTRACT-FREEZE-1",
+  "phase": "original fictional CPU first slice; before optional model protocol",
+  "model_calls": 0,
+  "tests_are_executed_checks_not_fixture_runs": true,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 967,
+      "sha256": "7efec6ff837f6f2898b174041d67d7c7f2b9f6b6525c3c96e43884ea6574db48"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 3508,
+      "sha256": "0da546a2b85a1468709475f99416617bf7c62414cd2f9ffef802feaa459bdfdf"
+    },
+    {
+      "path": "fixtures/source-manifest.json",
+      "bytes": 680,
+      "sha256": "e5b8740409a2cd1b6602e156a272f8cc9c0773ab4e0d1ef53c57d7d3a17002ba"
+    },
+    {
+      "path": "fixtures/source-v1.json",
+      "bytes": 3811,
+      "sha256": "34e6676775b44cf25caf446ddbbd1f629b1aabc73efe8f68dce3c5afaa887461"
+    },
+    {
+      "path": "fixtures/review-policy-v1.json",
+      "bytes": 2128,
+      "sha256": "9da3effda87dfae3ac88628fb9632e3fa7c4f4b7167f20d42d5a788c900522c8"
+    },
+    {
+      "path": "fixtures/gold-v1.json",
+      "bytes": 1869,
+      "sha256": "95aecba517a52745bcc29db2cf61c5350ee40c74137d469b9444a8ace4985a90"
+    },
+    {
+      "path": "core.mjs",
+      "bytes": 17687,
+      "sha256": "6e9f98016185bbcba04636a166441cb4b8963a7d72d29f7cf2f308dbf26822a3"
+    },
+    {
+      "path": "server.mjs",
+      "bytes": 6526,
+      "sha256": "ee79d4f9a3aceb41905398ced6d9fda9a6fd28ffdbe7f2927246bbe3272d6c92"
+    },
+    {
+      "path": "app.mjs",
+      "bytes": 7856,
+      "sha256": "8ce0ae6df5b310419649b821101e10c179ad13819d72f188c528d4bfa0bbe30d"
+    },
+    {
+      "path": "index.html",
+      "bytes": 3653,
+      "sha256": "ee71f922451a38921c23ae9636f67a992971cb02f3abef5d8d4e4d48340b83ac"
+    },
+    {
+      "path": "style.css",
+      "bytes": 3025,
+      "sha256": "503a3aaf45bfb6126a62e5a959af631c29094ac5dc7f804d44552b517ef4d506"
+    },
+    {
+      "path": "package.json",
+      "bytes": 190,
+      "sha256": "67bbd6b27940618ab0181656329b34156ef684a9bf0e0c6978e31f37e27fb359"
+    },
+    {
+      "path": "test/core.test.mjs",
+      "bytes": 16463,
+      "sha256": "81d3b09e5449635872ca4c038d2c617adf6962dad5edbcf888246943c075183a"
+    },
+    {
+      "path": "test/server.test.mjs",
+      "bytes": 5416,
+      "sha256": "6191a912d35b1251226e3e02c2598fb0daefdf54f82d6ab3bae663ed749937be"
+    },
+    {
+      "path": "scripts/browser-check.py",
+      "bytes": 10674,
+      "sha256": "1abbc07d015cb0f094f33a0b87b57d8736c37f78c22c14416192db611d19ee2a"
+    }
+  ]
+}

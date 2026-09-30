@@ -1,0 +1,17 @@
+{
+  "kind":"Original fictional contract expectations, frozen before model work",
+  "SO-A":{"ordered_ea":18,"delivered_ea":6,"remaining_ordered_ea":12,"confirmed_ea":null,"order_wide_confirmed_arrival_date":null,"active_block_ids":["DB-A2"],"owner_role":"Warehouse Review","request_note_confirms_or_releases":false},
+  "SO-B-Service":{"exact_keys":["status","owner_role"],"status":"CREDIT_REVIEW_BLOCK","owner_role":"Authorized Commercial Review","restricted_context_hints":0},
+  "SO-C":{"unique_event_count":3,"transport_duplicate_count":1,"block_instance_count":2,"active_block_ids":["BLK-C2"],"current_revision":4,"seeded_review_current":false,"owner_role":null},
+  "mutations":[
+    {"id":"M1","change":"different content for EV-C3 same ID/revision","expected":"conflict; never last-write-wins or all-clear"},
+    {"id":"M2","change":"explicit valid CLEAR_REVERSED targeting EV-C2","expected":"BLK-C1 and BLK-C2 active; no receipt authorizes either"},
+    {"id":"M3","change":"unknown/already-reversed clear target","expected":"invalid/conflict; no silent inverse"},
+    {"id":"M4","change":"revision3 review after current4","expected":"STALE_REVIEW; receipt/case count unchanged"},
+    {"id":"M5","change":"missing completeness, unknown or invalid quantities","expected":"remaining unknown; invalid is distinct from zero"},
+    {"id":"M6","change":"same key strings with a different source system","expected":"distinct composite key; no merge"},
+    {"id":"M7","change":"downgrade role or delayed privileged response","expected":"no restricted detail/canary/title/count/hash/existence hints"},
+    {"id":"M8","change":"unknown context or missing responsible role","expected":"unresolved queue question; never all-clear"},
+    {"id":"M9","change":"missing/unreadable/changed source or policy","expected":"current authority unavailable; fresh review disabled"}
+  ]
+}

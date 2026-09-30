@@ -1,0 +1,79 @@
+{
+  "view": {
+    "order": "SO-B",
+    "role": "Authorized Commercial Review",
+    "source_revision": 4,
+    "status": "CREDIT_REVIEW_BLOCK",
+    "owner_role": "Authorized Commercial Review",
+    "lines": [
+      {
+        "record_id": "SRC-B-L1",
+        "revision": 1,
+        "key": {
+          "source_system": "ERP-SYNTH-1",
+          "order": "SO-B",
+          "item": "10",
+          "schedule_line": "1"
+        },
+        "ordered_ea": 5,
+        "confirmed_ea": null,
+        "delivered_ea": 0,
+        "remaining_ordered_ea": 5,
+        "quantity_states": {
+          "ordered_ea": "known",
+          "confirmed_ea": "unknown",
+          "delivered_ea": "known",
+          "remaining_ordered_ea": "known"
+        },
+        "requested_destination_arrival_date": "2026-10-04",
+        "confirmed_destination_arrival_date": null,
+        "planned_dispatch_date": null,
+        "actual_delivery_date": null
+      }
+    ],
+    "quantities": {
+      "states": {
+        "ordered_ea": "known",
+        "confirmed_ea": "unknown",
+        "delivered_ea": "known",
+        "remaining_ordered_ea": "known"
+      },
+      "ordered_ea": 5,
+      "confirmed_ea": null,
+      "delivered_ea": 0,
+      "remaining_ordered_ea": 5
+    },
+    "order_wide_confirmed_arrival_date": null,
+    "active_blocks": [],
+    "events": [],
+    "event_summary": {
+      "valid": true,
+      "conflicts": [],
+      "unique_event_count": 0,
+      "block_instance_count": 0,
+      "transport_duplicate_count": 0
+    },
+    "unresolved_questions": [
+      "confirmed_ea is unknown for [\"ERP-SYNTH-1\",\"SO-B\",\"10\",\"1\"].",
+      "Confirmed destination arrival date is unknown for [\"ERP-SYNTH-1\",\"SO-B\",\"10\",\"1\"]."
+    ],
+    "notes": [],
+    "restricted_context": [
+      {
+        "record_id": "PRIVATE-B1",
+        "revision": 1,
+        "order": "SO-B",
+        "title": "Fictional commercial-only context",
+        "reason": "Synthetic placeholder only; no creditworthiness assessment.",
+        "canary": "SYNTHETIC-B-CANARY-839Q",
+        "allowed_role": "Authorized Commercial Review"
+      }
+    ],
+    "seeded_reviews": [],
+    "model_calls": 0
+  },
+  "binding": null,
+  "review_enabled": false,
+  "history": [],
+  "current_source_revision": 4
+}
