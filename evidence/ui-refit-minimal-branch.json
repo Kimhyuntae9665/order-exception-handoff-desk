@@ -1,0 +1,43 @@
+{
+  "kind": "Narrow actual Chrome minimal branch follow-up",
+  "executed_in_CI": false,
+  "model_calls": 0,
+  "checks": [
+    {
+      "name": "Current minimal branch explicitly labels selected source revision4 and current Service permission",
+      "passed": true
+    },
+    {
+      "name": "Historical minimal branch explicitly separates selected source revision3 from current Service permission",
+      "passed": true
+    },
+    {
+      "name": "Historical SO-B Service API remains exactly status/owner_role without added revision or role metadata",
+      "passed": true
+    },
+    {
+      "name": "Historical role downgrade still erases restricted source/receipt DOM while retaining honest selected revision",
+      "passed": true
+    },
+    {
+      "name": "No browser errors; actual historical minimal branch screenshot recaptured",
+      "passed": true
+    }
+  ],
+  "passed": 5,
+  "failed": 0,
+  "selected_source_revision": 3,
+  "permission_projection": "current session Service",
+  "api_fields": [
+    "status",
+    "owner_role"
+  ],
+  "media": [
+    {
+      "path": "docs/ui-refit/08-service-minimal.png",
+      "sha256": "4c21432d4e45f1c1931d7ce7e2e7b804fcb88963a706ac7dbeaf2a2bf428d389",
+      "bytes": 74761,
+      "origin": "actual Chrome historical SO-B Service revision3 screenshot"
+    }
+  ]
+}

@@ -1,9 +1,8 @@
 {
   "schema_version": "P14-UI-REFIT-SOURCE-PROVENANCE-1",
   "kind": "Final authored static UI source and unchanged existing browser/media evidence",
-  "ui_source_commit": "ce77096ea9bab7534843c55c1c4fd01a1147f309",
   "model_calls": 0,
-  "browser_or_media_regenerated": false,
+  "browser_or_media_regenerated": true,
   "current_ui_source": [
     {
       "path": "ui-server-v2.mjs",
@@ -22,8 +21,8 @@
     },
     {
       "path": "ui/v2/app.mjs",
-      "bytes": 8577,
-      "sha256": "59a6b3e408b7147287300cd53cac4d55b6ea8679345bbd1ccd6932c1e91c9927"
+      "bytes": 8872,
+      "sha256": "f0d7fe36c39093e1fb65c5b24e5569041f1277417f2ff847d809c54a34b71a45"
     }
   ],
   "original_backend_contract": {
@@ -69,8 +68,8 @@
     },
     {
       "path": "docs/ui-refit/08-service-minimal.png",
-      "bytes": 66127,
-      "sha256": "bb69eed71a782687665270750fc65f0a03d2b60f3351c25585ad13d732a579c4"
+      "bytes": 74761,
+      "sha256": "4c21432d4e45f1c1931d7ce7e2e7b804fcb88963a706ac7dbeaf2a2bf428d389"
     },
     {
       "path": "docs/ui-refit/09-mobile-390.png",
@@ -94,8 +93,8 @@
     },
     {
       "path": "evidence/ui-refit-browser-checks.json",
-      "bytes": 5954,
-      "sha256": "552f887a1b0f790ad2af648d4643350d48d6f078bb43a8aed6b1e05d9d7dba46"
+      "bytes": 6108,
+      "sha256": "d4470e4caf88fbb8753b92ccc85c1fabfb61d8b5909d5e5c2c7297977cd7f5d2"
     },
     {
       "path": "evidence/browser-checks.json",
@@ -106,6 +105,13 @@
       "path": "evidence/demo-transitions.json",
       "bytes": 4795,
       "sha256": "ec64172971496fbf557b70968c5881491340604b92b98ad39d3ee2cc3d0e4895"
+    },
+    {
+      "path": "evidence/ui-refit-minimal-branch.json",
+      "bytes": 1309,
+      "sha256": "c2f4641ec5b4ee5a3d0abf871c874d1f7831cdbb204bac71a3b2fac25988150f"
     }
-  ]
+  ],
+  "source_identity": "SHA-256 and byte counts of final served source; verified from committed checkout in CI",
+  "media_update": "Only screenshot08 recaptured for historical Service branch; other nine screenshots and historical video unchanged"
 }

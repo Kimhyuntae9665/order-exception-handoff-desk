@@ -160,9 +160,9 @@
     },
     {
       "path": "docs/ui-refit/08-service-minimal.png",
-      "sha256": "bb69eed71a782687665270750fc65f0a03d2b60f3351c25585ad13d732a579c4",
-      "bytes": 66127,
-      "origin": "actual Chrome screenshot"
+      "sha256": "4c21432d4e45f1c1931d7ce7e2e7b804fcb88963a706ac7dbeaf2a2bf428d389",
+      "bytes": 74761,
+      "origin": "actual Chrome historical SO-B Service revision3 screenshot"
     },
     {
       "path": "docs/ui-refit/09-mobile-390.png",
@@ -183,5 +183,6 @@
       "origin": "actual prepared local receipt export"
     }
   ],
-  "original_video": "docs/cpu-native-demo.mp4 is historical pre-refit UI; not a current v2 capture"
+  "original_video": "docs/cpu-native-demo.mp4 is historical pre-refit UI; not a current v2 capture",
+  "narrow_followup": "evidence/ui-refit-minimal-branch.json; only screenshot08 recaptured, original21 checks retained"
 }

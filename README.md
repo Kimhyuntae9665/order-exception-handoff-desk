@@ -17,9 +17,11 @@ The current **UI v2** shows equal source and result panels, a schedule-line ledg
 ![과거 영수증 — 소스 revision과 현재 권한, 미확인 검토 역할을 구분합니다.](docs/ui-refit/05-historical-receipt.png)
 ![반복 검토 — 기존 영수증을 반환하고 차단은 유지합니다.](docs/ui-refit/06-repeated-review.png)
 ![영수증 내보내기 — 준비 상태와 다운로드·외부 반영의 한계를 표시합니다.](docs/ui-refit/07-export-receipt.png)
-![Service 최소 권한 — 허용된 상태와 담당 역할만 표시합니다.](docs/ui-refit/08-service-minimal.png)
+![Service 과거 소스 — revision3과 현재 권한을 구분하고 상태·담당 역할만 표시합니다.](docs/ui-refit/08-service-minimal.png)
 ![390px 화면 — 한 줄 제목과 스크롤 가능한 일정 표를 유지합니다.](docs/ui-refit/09-mobile-390.png)
 ![소스 읽기 실패 — 근거와 영수증을 지우고 기록·내보내기를 비활성화합니다.](docs/ui-refit/10-source-unavailable.png)
+
+[Narrow Service branch follow-up](evidence/ui-refit-minimal-branch.json) records five additional actual local Chrome checks for selected current/historical revision, current permission projection, exact two-field API response and hidden-DOM erasure. Only screenshot08 was recaptured for this follow-up; the other nine current screenshots and historical video were preserved.
 
 [Historical pre-refit CPU browser video](docs/cpu-native-demo.mp4) shows the **original UI**, not current UI v2. It is an actual timestamp-ordered capture of 80 native browser frames at two frames/second (40 seconds, ten inspected stages), encoded with the existing CPU ffmpeg executable. It includes repeated acknowledgment, historical revision, role downgrade and isolated source-read failure. It contains no model demo. [Historical video transitions and exact media hash](evidence/demo-transitions.json). Original [schedule screenshot](docs/schedule-lines.png), [event/review screenshot](docs/event-handoff-review.png), [mobile screenshot](docs/mobile-390.png), [permitted status](docs/permitted-status.png) and [source failure](docs/source-unavailable.png) are also historical pre-refit UI. [Historical 15-check browser record and media hashes](evidence/browser-checks.json).
 
