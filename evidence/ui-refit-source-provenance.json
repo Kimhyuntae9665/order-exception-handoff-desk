@@ -1,0 +1,111 @@
+{
+  "schema_version": "P14-UI-REFIT-SOURCE-PROVENANCE-1",
+  "kind": "Final authored static UI source and unchanged existing browser/media evidence",
+  "ui_source_commit": "ce77096ea9bab7534843c55c1c4fd01a1147f309",
+  "model_calls": 0,
+  "browser_or_media_regenerated": false,
+  "current_ui_source": [
+    {
+      "path": "ui-server-v2.mjs",
+      "bytes": 1358,
+      "sha256": "821d74eccba912121a4be1d4abdf6a3687e6d96b09896dfdcf000787ac821422"
+    },
+    {
+      "path": "ui/v2/index.html",
+      "bytes": 3877,
+      "sha256": "cc9b27010fe37e50cf908c5c580d8772838ad781d401d7c5e0c17fa8fa3955d4"
+    },
+    {
+      "path": "ui/v2/style.css",
+      "bytes": 3195,
+      "sha256": "3bad626c4509c27120f5bcff42830a3ddca204d2d06347157be958d4d3777ecd"
+    },
+    {
+      "path": "ui/v2/app.mjs",
+      "bytes": 8577,
+      "sha256": "59a6b3e408b7147287300cd53cac4d55b6ea8679345bbd1ccd6932c1e91c9927"
+    }
+  ],
+  "original_backend_contract": {
+    "path": "evidence/cpu-contract-freeze.json",
+    "bytes": 2490,
+    "sha256": "f00da7e64ccfc813659af5c2e3c4435405d49bb2271fa0884e84fdcbb3c695c1"
+  },
+  "preserved_media_and_evidence": [
+    {
+      "path": "docs/ui-refit/01-current-lines.png",
+      "bytes": 205932,
+      "sha256": "deee8cf775ded0f2505d8d34df60ddafedbb07656dd315e675206590d35fc34d"
+    },
+    {
+      "path": "docs/ui-refit/02-source-evidence.png",
+      "bytes": 248019,
+      "sha256": "3a1466b5c41b41d9d20f36f3928fed8c5ad35257d5c57c0437a28e964eb51c17"
+    },
+    {
+      "path": "docs/ui-refit/03-event-fold.png",
+      "bytes": 270770,
+      "sha256": "99628a540a79301d08decd90fb1074113793e46a320ebf7b55a2d2ef9af81a8e"
+    },
+    {
+      "path": "docs/ui-refit/04-unknown-owner.png",
+      "bytes": 300718,
+      "sha256": "32e104b336358e4cd43cc6b8d020635afcd4fde01fa6541bf2178c356100bed0"
+    },
+    {
+      "path": "docs/ui-refit/05-historical-receipt.png",
+      "bytes": 240860,
+      "sha256": "4b304fc9840316a27786de42ad4065aba2028e22e97a5e4ce6b4814814328876"
+    },
+    {
+      "path": "docs/ui-refit/06-repeated-review.png",
+      "bytes": 305616,
+      "sha256": "cde70802fb96e39347cd5252c3716730f39c65ed3a6c0c1d7d7811f2775d2d97"
+    },
+    {
+      "path": "docs/ui-refit/07-export-receipt.png",
+      "bytes": 400736,
+      "sha256": "0edc84ff793e5f19d0084003cf074bbeb1a52efe8d2582646f665b0b51653743"
+    },
+    {
+      "path": "docs/ui-refit/08-service-minimal.png",
+      "bytes": 66127,
+      "sha256": "bb69eed71a782687665270750fc65f0a03d2b60f3351c25585ad13d732a579c4"
+    },
+    {
+      "path": "docs/ui-refit/09-mobile-390.png",
+      "bytes": 193930,
+      "sha256": "572f14a031d6260151696429f0a9fa45fe94ee76cab4056e86ca43e86284ed7d"
+    },
+    {
+      "path": "docs/ui-refit/10-source-unavailable.png",
+      "bytes": 59293,
+      "sha256": "9271538597ff96171be41747c008b07af92e3faebfe6562a43a544ed8d84e4a5"
+    },
+    {
+      "path": "docs/ui-refit/executed-local-receipt.json",
+      "bytes": 1511,
+      "sha256": "43adf28c54370ff210b24494d606c7abb832080136de693470eafaec60ff4e3e"
+    },
+    {
+      "path": "docs/cpu-native-demo.mp4",
+      "bytes": 790261,
+      "sha256": "a5b13421e285e1f8fb5c930abb172769bfa231393e74b08b279e0178f6953763"
+    },
+    {
+      "path": "evidence/ui-refit-browser-checks.json",
+      "bytes": 5954,
+      "sha256": "552f887a1b0f790ad2af648d4643350d48d6f078bb43a8aed6b1e05d9d7dba46"
+    },
+    {
+      "path": "evidence/browser-checks.json",
+      "bytes": 3797,
+      "sha256": "b73de7a45b558161767bdb33c98a5b069f2e9daa0e5dcb9b70ad081daeec06f2"
+    },
+    {
+      "path": "evidence/demo-transitions.json",
+      "bytes": 4795,
+      "sha256": "ec64172971496fbf557b70968c5881491340604b92b98ad39d3ee2cc3d0e4895"
+    }
+  ]
+}

@@ -8,7 +8,7 @@ A native schedule-line table, source-event timeline and unresolved-review queue 
 
 The diagram describes the implemented CPU path. Generic original process glyphs represent components, not technology brands. There is no model branch in this version; **zero model calls** have run for P14.
 
-The current **UI v2** shows equal source and result panels, a schedule-line ledger, source events, unresolved questions and local receipt history. The original backend and all 15 original CPU contract files remain byte-for-byte frozen. The new static overlay delegates every API request to that backend. [Current UI browser checks and media provenance](evidence/ui-refit-browser-checks.json) record actual local Chrome execution separately from CI.
+The current **UI v2** shows equal source and result panels, a schedule-line ledger, source events, unresolved questions and local receipt history. The original backend and all 15 original CPU contract files remain byte-for-byte frozen. The new static overlay delegates every API request to that backend. [Current UI browser checks and media provenance](evidence/ui-refit-browser-checks.json) record actual local Chrome execution separately from CI. [Final UI source provenance](evidence/ui-refit-source-provenance.json) records SHA-256 and byte counts for the wrapper and all three served UI files; CI verifies those bytes and preserved browser/media evidence with `python3 scripts/verify-ui-refit-provenance.py`.
 
 ![현재 주문 라인 — 수량과 날짜를 구분합니다.](docs/ui-refit/01-current-lines.png)
 ![원문 근거 — 일정 키에서 원본 라인을 확인합니다.](docs/ui-refit/02-source-evidence.png)
