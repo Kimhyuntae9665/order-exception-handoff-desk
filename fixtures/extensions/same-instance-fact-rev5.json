@@ -1,0 +1,13 @@
+{
+  "schema_version": "P14-SYNTHETIC-EXTENSION-1",
+  "purpose": "CPU-only stale-review regression; not a model case or live source update",
+  "base_source_sha256": "34e6676775b44cf25caf446ddbbd1f629b1aabc73efe8f68dce3c5afaa887461",
+  "source_revision": 5,
+  "changed_record": {
+    "record_id": "SRC-C-L1",
+    "revision": 5,
+    "key": {"source_system":"ERP-SYNTH-1","order":"SO-C","item":"10","schedule_line":"1"},
+    "requested_destination_arrival_date": "2026-10-06"
+  },
+  "unchanged": ["BLK-C2 instance identity", "all source events", "confirmed arrival remains unknown", "no block case added", "no source clear/release"]
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "Executed CPU same-block-instance changed-permitted-fact regression",
+  "model_calls": 0,
+  "base_source_sha256": "34e6676775b44cf25caf446ddbbd1f629b1aabc73efe8f68dce3c5afaa887461",
+  "extension_sha256": "dca4ab8b79f80f78dd771142dc1d709cf197056b453027b339e08c2c29543ecf",
+  "old_source_revision": 4,
+  "current_source_revision": 5,
+  "block_instance_id": "BLK-C2",
+  "changed_field": "requested_destination_arrival_date",
+  "old_value": null,
+  "current_value": "2026-10-06",
+  "confirmed_arrival": null,
+  "old_review_rejection": "STALE_REVIEW",
+  "counter_and_hash_adjusted_old_facts_rejection": "STALE_REVIEW",
+  "receipts_added": 0,
+  "source_events_unchanged": true,
+  "block_cases_before": 2,
+  "block_cases_after": 2,
+  "active_blocks_before": 1,
+  "active_blocks_after": 1,
+  "old_view_fingerprint": "271e53e5ca63549eeab69f6156381f02665371d5d612e4d58692c215ed7d43f5",
+  "current_view_fingerprint": "c9c3df7bc100ab59c47ce182e47783ed4a3b6a05ecc529f2b72229b3e38c053f"
+}

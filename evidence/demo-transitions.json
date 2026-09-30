@@ -1,0 +1,119 @@
+{
+  "kind": "Actual native Chrome CPU workflow recapture; inspected transitions, no model calls",
+  "source_sha256": "34e6676775b44cf25caf446ddbbd1f629b1aabc73efe8f68dce3c5afaa887461",
+  "model_calls": 0,
+  "executed_in_CI": false,
+  "frame_rate": 2,
+  "frame_count": 80,
+  "duration_seconds": 40.0,
+  "capture": "Each frame awaited from real browser state at half-second intervals; no generated UI or duplicate-frame insertion",
+  "stages": [
+    {
+      "name": "SO-A current schedule lines and unknown confirmation",
+      "first_frame": 0,
+      "last_frame": 7,
+      "video_start_seconds": 0.0,
+      "video_end_seconds": 4.0,
+      "actual_status_text": "CURRENT \u00b7 BLOCKED \u00b7 no release decision",
+      "actual_visible_heading": "SO-A \u00b7 schedule lines \u00b7 source revision 4",
+      "source_block_changes": false
+    },
+    {
+      "name": "SO-C current source events and active BLK-C2",
+      "first_frame": 8,
+      "last_frame": 15,
+      "video_start_seconds": 4.0,
+      "video_end_seconds": 8.0,
+      "actual_status_text": "CURRENT \u00b7 BLOCKED \u00b7 no release decision",
+      "actual_visible_heading": "SO-C \u00b7 schedule lines \u00b7 source revision 4",
+      "source_block_changes": false
+    },
+    {
+      "name": "Historical revision3 cannot review current instance",
+      "first_frame": 16,
+      "last_frame": 23,
+      "video_start_seconds": 8.0,
+      "video_end_seconds": 12.0,
+      "actual_status_text": "HISTORICAL \u00b7 UNRESOLVED \u00b7 no release decision",
+      "actual_visible_heading": "SO-C \u00b7 schedule lines \u00b7 source revision 3",
+      "source_block_changes": false
+    },
+    {
+      "name": "Historical BLK-C1 receipt and event clear",
+      "first_frame": 24,
+      "last_frame": 31,
+      "video_start_seconds": 12.0,
+      "video_end_seconds": 16.0,
+      "actual_status_text": "HISTORICAL \u00b7 UNRESOLVED \u00b7 no release decision",
+      "actual_visible_heading": "SO-C \u00b7 schedule lines \u00b7 source revision 3",
+      "source_block_changes": false
+    },
+    {
+      "name": "First local review acknowledgment",
+      "first_frame": 32,
+      "last_frame": 39,
+      "video_start_seconds": 16.0,
+      "video_end_seconds": 20.0,
+      "actual_status_text": "LOCAL REVIEW RECORDED \u00b7 source blocks unchanged.",
+      "actual_visible_heading": "SO-C \u00b7 schedule lines \u00b7 source revision 4",
+      "source_block_changes": false
+    },
+    {
+      "name": "Current executed receipt beside historical seeded receipt",
+      "first_frame": 40,
+      "last_frame": 47,
+      "video_start_seconds": 20.0,
+      "video_end_seconds": 24.0,
+      "actual_status_text": "LOCAL REVIEW RECORDED \u00b7 source blocks unchanged.",
+      "actual_visible_heading": "SO-C \u00b7 schedule lines \u00b7 source revision 4",
+      "source_block_changes": false
+    },
+    {
+      "name": "Repeated acknowledgment returns existing receipt",
+      "first_frame": 48,
+      "last_frame": 55,
+      "video_start_seconds": 24.0,
+      "video_end_seconds": 28.0,
+      "actual_status_text": "REPEATED ACKNOWLEDGMENT \u00b7 existing receipt \u00b7 source blocks unchanged.",
+      "actual_visible_heading": "SO-C \u00b7 schedule lines \u00b7 source revision 4",
+      "source_block_changes": false
+    },
+    {
+      "name": "Explicit fictional commercial role view",
+      "first_frame": 56,
+      "last_frame": 63,
+      "video_start_seconds": 28.0,
+      "video_end_seconds": 32.0,
+      "actual_status_text": "CURRENT \u00b7 CREDIT_REVIEW_BLOCK \u00b7 no release decision",
+      "actual_visible_heading": "SO-B \u00b7 schedule lines \u00b7 source revision 4",
+      "source_block_changes": false
+    },
+    {
+      "name": "Service role downgrade exposes only permitted status and owner",
+      "first_frame": 64,
+      "last_frame": 71,
+      "video_start_seconds": 32.0,
+      "video_end_seconds": 36.0,
+      "actual_status_text": "PERMITTED STATUS \u00b7 current fictional role projection",
+      "actual_visible_heading": "",
+      "source_block_changes": false
+    },
+    {
+      "name": "Missing isolated source revokes authority and fresh actions",
+      "first_frame": 72,
+      "last_frame": 79,
+      "video_start_seconds": 36.0,
+      "video_end_seconds": 40.0,
+      "actual_status_text": "UNAVAILABLE \u00b7 current source authority revoked. Fresh admission and inspection are required.",
+      "actual_visible_heading": "",
+      "source_block_changes": false
+    }
+  ],
+  "video": {
+    "path": "docs/cpu-native-demo.mp4",
+    "bytes": 790261,
+    "sha256": "a5b13421e285e1f8fb5c930abb172769bfa231393e74b08b279e0178f6953763"
+  },
+  "original_png_end_states": "Separate15-check local browser evidence; these video stages are not additional CI tests",
+  "ui_version": "historical original pre-refit UI"
+}

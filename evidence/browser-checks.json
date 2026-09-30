@@ -90,8 +90,8 @@
   "media": [
     {
       "path": "docs/architecture.png",
-      "sha256": "596873881e3cd99a36ba03949d8a89cc999324fa4b24e69b3593e340501610b9",
-      "bytes": 33769
+      "sha256": "bc34a45ac4e4b2e8feede8c307c08f9b13c2e4c7fb4889323751f2eb2cf2243c",
+      "bytes": 35569
     },
     {
       "path": "docs/event-handoff-review.png",
@@ -120,8 +120,11 @@
     },
     {
       "path": "docs/cpu-native-demo.mp4",
-      "sha256": "27f41313d7539e5e0b370ba89b4ee0ba3487416d38ae9464eba70afe67eb26bf",
-      "bytes": 211775
+      "sha256": "a5b13421e285e1f8fb5c930abb172769bfa231393e74b08b279e0178f6953763",
+      "bytes": 790261
     }
-  ]
+  ],
+  "media_record_refresh": "Exact current asset records, independently of unchanged original15 local Chrome check outcomes. CI runs CPU tests only.",
+  "ui_version": "historical original pre-refit UI",
+  "executed_in_CI": false
 }

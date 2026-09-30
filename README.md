@@ -8,11 +8,20 @@ A native schedule-line table, source-event timeline and unresolved-review queue 
 
 The diagram describes the implemented CPU path. Generic original process glyphs represent components, not technology brands. There is no model branch in this version; **zero model calls** have run for P14.
 
-![Exact line quantities and distinct date meanings](docs/schedule-lines.png)
-![Current block, unresolved questions and historical receipt](docs/event-handoff-review.png)
-![Readable 390px native controls with horizontally scrollable ledger](docs/mobile-390.png)
+The current **UI v2** shows equal source and result panels, a schedule-line ledger, source events, unresolved questions and local receipt history. The original backend and all 15 original CPU contract files remain byte-for-byte frozen. The new static overlay delegates every API request to that backend. [Current UI browser checks and media provenance](evidence/ui-refit-browser-checks.json) record actual local Chrome execution separately from CI.
 
-[Actual CPU browser demonstration](docs/cpu-native-demo.mp4) is a timestamp-ordered capture of native browser frames at two frames/second, encoded with the existing CPU ffmpeg executable. It includes repeated acknowledgment, historical revision, role downgrade and isolated source-read failure; it is not a model demo. [Machine-readable browser checks and media hashes](evidence/browser-checks.json).
+![현재 주문 라인 — 수량과 날짜를 구분합니다.](docs/ui-refit/01-current-lines.png)
+![원문 근거 — 일정 키에서 원본 라인을 확인합니다.](docs/ui-refit/02-source-evidence.png)
+![이벤트 접기 — 중복 전송과 현재 BLK-C2를 구분합니다.](docs/ui-refit/03-event-fold.png)
+![미확인 담당 — 질문을 남기고 EV-C3 원문을 확인합니다.](docs/ui-refit/04-unknown-owner.png)
+![과거 영수증 — 소스 revision과 현재 권한, 미확인 검토 역할을 구분합니다.](docs/ui-refit/05-historical-receipt.png)
+![반복 검토 — 기존 영수증을 반환하고 차단은 유지합니다.](docs/ui-refit/06-repeated-review.png)
+![영수증 내보내기 — 준비 상태와 다운로드·외부 반영의 한계를 표시합니다.](docs/ui-refit/07-export-receipt.png)
+![Service 최소 권한 — 허용된 상태와 담당 역할만 표시합니다.](docs/ui-refit/08-service-minimal.png)
+![390px 화면 — 한 줄 제목과 스크롤 가능한 일정 표를 유지합니다.](docs/ui-refit/09-mobile-390.png)
+![소스 읽기 실패 — 근거와 영수증을 지우고 기록·내보내기를 비활성화합니다.](docs/ui-refit/10-source-unavailable.png)
+
+[Historical pre-refit CPU browser video](docs/cpu-native-demo.mp4) shows the **original UI**, not current UI v2. It is an actual timestamp-ordered capture of 80 native browser frames at two frames/second (40 seconds, ten inspected stages), encoded with the existing CPU ffmpeg executable. It includes repeated acknowledgment, historical revision, role downgrade and isolated source-read failure. It contains no model demo. [Historical video transitions and exact media hash](evidence/demo-transitions.json). Original [schedule screenshot](docs/schedule-lines.png), [event/review screenshot](docs/event-handoff-review.png), [mobile screenshot](docs/mobile-390.png), [permitted status](docs/permitted-status.png) and [source failure](docs/source-unavailable.png) are also historical pre-refit UI. [Historical 15-check browser record and media hashes](evidence/browser-checks.json).
 
 ## Source facts and decision boundaries
 
@@ -34,7 +43,7 @@ Review binds current source revision, role-scoped source digest, policy digest, 
 
 Role projection precedes public hashes and metadata: changing fictional restricted SO-B content cannot change Service SO-A/SO-C bindings or SO-B's two-field response. Denied and unknown source lookups have the same generic response. A role downgrade immediately erases old evidence from visible and hidden client DOM. Serialized mutations/reads plus generation guards discard delayed responses. Named source destinations support keyboard navigation and preserve a later explicit focus choice.
 
-Missing/read-denied/hash-changed admitted files revoke current authority and prior session inspection grants. Old payloads cannot be reaccepted merely by restoring file bytes: a fresh inspection is required. Historical source views and seeded receipts remain explicitly historical. A prepared export acknowledgment is not proof of client download completion, target-system import or authorization.
+Missing/read-denied/hash-changed admitted files revoke current authority and prior session inspection grants. Old payloads cannot be reaccepted merely by restoring file bytes: a fresh inspection is required. Historical source views and seeded receipts remain explicitly historical. UI v2 distinguishes the selected source revision from the current session's permission projection. Receipt history displays `reviewed_at` and the actual recorded reviewer role; a seeded receipt with no role remains **Unknown**. Its original payload can be inspected without inferring an absent field. A prepared export acknowledgment is not proof of client download completion, target-system import or authorization.
 
 ## Run and verify
 
@@ -42,8 +51,11 @@ Requires Node20+; runtime has no npm dependencies.
 
 ```sh
 npm test
-npm start
-# Open http://127.0.0.1:5140
+python3 scripts/verify-freeze.py
+node scripts/same-instance-extension.mjs
+node ui-server-v2.mjs
+# Current UI v2: http://127.0.0.1:5164
+# Historical frozen UI: npm start (port 5140)
 ```
 
 `node --test test/*.test.mjs` executes the actual core/API checks. Original gold is a declared oracle, not a test run. Original source/policy/gold bytes are pinned in the manifest before any optional future model work. Tests cover duplicate/conflict/reversal, null/invalid/zero quantities, exact composite IDs, stale/forged/session-bound review, restricted-data noninterference, source-read/hash failures and repeated actions. [Executed CPU browser checks](evidence/browser-checks.json) separately record real native Chrome flows at desktop and390px. Browser reproduction uses installed Python Playwright/Chrome/ffmpeg; no installer or inference is invoked.
@@ -59,4 +71,4 @@ These public vendor descriptions motivate distinct workflows; they are not evide
 | [Google Cloud: Danfoss](https://cloud.google.com/customers/danfoss) | Deployed order intake automation; complex pricing exceptions remain with staff; further analytics is described as future work | Intake, exception collaboration and order-status support have different authority and maturity. No throughput/ROI estimate is made here. |
 
 Original fictional source and original code/assets are MIT licensed. No vendor data, screenshots or logos are redistributed. The role picker is a **synthetic permission simulation**, not production authentication. Sessions/receipts are in memory, the server binds to loopback, and a restart loses executed local receipts. There is no real customer, credit or financial data, durable audit service, multi-tenant authorization, production availability claim or integration. Optional model-generated cited handoff drafting remains future work requiring a separate frozen protocol and lease; its incremental usefulness must be evaluated independently from CPU correctness.
-Verified CPU results: 22/22 Node checks on Linux (the chmod case is intentionally skipped on Windows) and 15/15 actual native Chrome checks. Original fixtures are unchanged. Local receipt timestamps record execution time, separately from the fictional source cutoff.
+Verified current CPU results: **25/25 Node checks on Linux**, comprising the original 22 checks, one authorized versioned same-instance regression and two overlay delegation checks. The chmod case is intentionally skipped on Windows. The versioned extension changes only SO-C's requested arrival from null to `2026-10-06` at revision5 on the same BLK-C2 instance; unchanged events/case counts and rejection of both old payloads and counter/hash-adjusted old facts are checked with zero added receipts. This is an isolated CPU regression; the running UI remains admitted original revision4. [Executed extension evidence](evidence/same-instance-extension.json). CI runs CPU tests, freeze verification and exact extension-evidence verification. **21/21 current UI v2 Chrome checks and ten screenshots were executed locally**, not in CI. Original historical Chrome evidence remains 15/15. Reproduce current browser checks with `python3 scripts/ui-refit-browser.py` using already installed Playwright/Chrome. Original fixtures and frozen CPU files are unchanged. Local receipt timestamps record execution time, separately from the fictional source cutoff. **Zero model calls**; optional model protocol preparation is paused.

@@ -1,0 +1,2 @@
+import test from'node:test';import assert from'node:assert/strict';import{checkExtension}from'../scripts/same-instance-extension.mjs';
+test('versioned same BLK-C2 instance with changed permitted requested date rejects old facts without new cases',()=>{const result=checkExtension();assert.equal(result.old_review_rejection,'STALE_REVIEW');assert.equal(result.counter_and_hash_adjusted_old_facts_rejection,'STALE_REVIEW');assert.equal(result.receipts_added,0);assert.equal(result.block_cases_before,result.block_cases_after);});

@@ -1,0 +1,4 @@
+"""Refresh exact assets only; preserve original browser check outcomes and their execution scope."""
+import hashlib,json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];path=ROOT/'evidence/browser-checks.json';e=json.loads(path.read_text());before=e['checks'];names=[*sorted((ROOT/'docs').glob('*.png')),ROOT/'docs/cpu-native-demo.mp4'];e['media']=[{'path':str(p.relative_to(ROOT)),'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size}for p in names];e['media_record_refresh']='Exact current asset records, independently of unchanged original15 local Chrome check outcomes. CI runs CPU tests only.';assert e['checks']==before;path.write_text(json.dumps(e,indent=2)+'\n');print(json.dumps({'refreshed_assets':len(names),'original_local_browser_checks':len(before),'model_calls':0}))
